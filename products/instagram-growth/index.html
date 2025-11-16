@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Growth Accelerator Kit - Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #10b981;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+        }
+        h1 { color: #1f2937; margin-bottom: 10px; font-size: 28px; }
+        .subtitle { color: #6b7280; margin-bottom: 30px; font-size: 16px; }
+        .download-box {
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .download-title {
+            color: #374151;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 10px 0;
+            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .email-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f0fdf4;
+            border-radius: 8px;
+            border: 2px solid #86efac;
+        }
+        .email-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .info { color: #6b7280; font-size: 14px; margin-top: 20px; line-height: 1.6; }
+        .support { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+        .support-text { color: #6b7280; font-size: 14px; }
+        .support-email { color: #667eea; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>Payment Successful!</h1>
+        <p class="subtitle">Your Instagram Growth Accelerator Kit is ready</p>
+        
+        <div class="download-box">
+            <div class="download-title">Instagram Growth Accelerator Kit</div>
+            <p style="color: #6b7280; margin-bottom: 15px; font-size: 14px;">Complete guide to building a thriving Instagram presence</p>
+            <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" class="btn" download>Download Now</a>
+        </div>
+        
+        <div class="email-section">
+            <h3 style="color: #10b981; margin-bottom: 10px;">📧 Get It Via Email</h3>
+            <p style="color: #6b7280; font-size: 14px; margin-bottom: 15px;">Enter your email to receive the download link instantly</p>
+            <input type="email" id="userEmail" class="email-input" placeholder="your@email.com" required>
+            <button onclick="sendEmail()" class="btn">Email Me the Download Link</button>
+        </div>
+        
+        <div class="info">
+            <p><strong>Important:</strong> Save this page or bookmark it for future access.</p>
+            <p style="margin-top: 10px;">Your purchase includes lifetime access to this product.</p>
+        </div>
+        
+        <div class="support">
+            <p class="support-text">Need help? Contact us at<br>
+            <a href="mailto:dsllc8888@gmail.com" class="support-email">dsllc8888@gmail.com</a></p>
+        </div>
+    </div>
+    
+    <script>
+        function sendEmail() {
+            const email = document.getElementById('userEmail').value;
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            const subject = encodeURIComponent('Your Instagram Growth Accelerator Kit');
+            const body = encodeURIComponent(
+                'Thank you for your purchase!\n\n' +
+                'Download your Instagram Growth Accelerator Kit here:\n' +
+                window.location.href + '\n\n' +
+                'Direct download link:\n' +
+                'https://drive.google.com/uc?export=download&id=YOUR_FILE_ID\n\n' +
+                'This link provides lifetime access to your product.\n\n' +
+                'If you need any assistance, please contact us at dsllc8888@gmail.com\n\n' +
+                'Thank you!'
+            );
+            
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            alert('Email client opened! The download link will be sent to: ' + email);
+        }
+    </script>
+</body>
+</html>
