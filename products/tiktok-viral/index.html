@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Viral Formula - Download</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        .success-icon { transform: translateY(-2px); }
+        .success-icon::before { transform: translate(-2px); }
+        .btn:hover { transform: scale(1.02); }
+        .btn {
+            margin: 10px 0;
+            transition: transform 0.2s;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .email-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f0f0f4;
+            border-radius: 8px;
+            border: 2px solid #86efac;
+        }
+        .email-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .info { color: #6b7280; font-size: 14px; margin-top: 20px; line-height: 1.6; }
+        .support { margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+        .support-text { color: #6b7280; font-size: 14px; margin-bottom: 10px; }
+        .support-email { color: #6667280; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>Payment Successful!</h1>
+        <p class="subtitle">Your TikTok Viral Formula is ready</p>
+        
+        <div class="download-box">
+            <div class="download-title">TikTok Viral Formula</div>
+            <p style="color: #6b7280; margin-bottom: 15px; font-size: 14px;">Complete guide to creating viral TikTok content and growing your audience</p>
+            <a href="https://docs.google.com/document/d/1JrwxPHiPHmXa_srnku0-_N8BMSeH8qRWKAYD2yJ_TXY/export?format=pdf" class="btn" download>Download Now</a>
+        </div>
+        
+        <div class="email-section">
+            <h3 style="color: #10b981; margin-bottom: 10px;">📧 Get It Via Email</h3>
+            <p style="color: #6b7280; font-size: 14px; margin-bottom: 15px;">Enter your email to receive the download link instantly</p>
+            <input type="email" id="userEmail" class="email-input" placeholder="your@email.com" required>
+            <button onclick="sendEmail()" class="btn">Email Me the Download Link</button>
+        </div>
+        
+        <div class="info">
+            <p><strong>Important:</strong> Save this page or bookmark it for future access.</p>
+            <p style="margin-top: 10px;">Your purchase includes lifetime access to this product.</p>
+        </div>
+        
+        <div class="support">
+            <p class="support-text">Need help? Contact us at<br>
+            <a href="mailto:dsllc8888@gmail.com" class="support-email">dsllc8888@gmail.com</a></p>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); color: #999; font-size: 12px; line-height: 1.6;">
+                <p style="margin-bottom: 10px;"><strong style="color: #6b7280;">⚠️ Disclaimer:</strong> Results may vary. Individual results depend on effort, experience, and other factors. Success is not guaranteed.</p>
+                <p style="margin-bottom: 0;"><strong style="color: #6b7280;">📋 Refund Policy:</strong> All sales are final. No refunds or returns. By purchasing, you acknowledge and agree to these terms.</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+function sendEmail() {
+    const email = document.getElementById('userEmail').value;
+    if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    const subject = encodeURIComponent('Your TikTok Viral Formula');
+    const body = encodeURIComponent(
+        'Thank you for your purchase!\n\n' +
+        'Download your TikTok Viral Formula here:\n' +
+        window.location.href + '\n\n' +
+        'Direct download link:\n' +
+        'https://docs.google.com/document/d/1JrwxPHiPHmXa_srnku0-_N8BMSeH8qRWKAYD2yJ_TXY/export?format=pdf\n\n' +
+        'This link provides lifetime access to your product.\n\n' +
+        'If you need any assistance, please contact us at dsllc8888@gmail.com\n\n' +
+        'Thank you!'
+    );
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    alert('Email client opened! The download link will be sent to: ' + email);
+}
+</script>
+</body>
+</html>
