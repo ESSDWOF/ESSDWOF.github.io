@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Profit System - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .success-icon {
+            text-align: center;
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .email-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        
+        .email-section h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .email-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .email-form input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .email-form button {
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .email-form button:hover {
+            background: #764ba2;
+        }
+        
+        .disclaimer {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 10px;
+            border: 1px solid #ffc107;
+        }
+        
+        .disclaimer h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .disclaimer p {
+            color: #856404;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .support {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .support a {
+            color: #667eea;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Payment Successful!</h1>
+        <p class="subtitle">Thank you for your purchase</p>
+        
+        <a href="https://docs.google.com/document/d/1-ZjG171F9HqB2FiJ1bQyV0ayVxxOtKh5SP2zz9jfOZQ/export?format=pdf" class="download-btn" download>
+            📥 Download Email Marketing Profit System
+        </a>
+        
+        <div class="info-box">
+            <p><strong>What's included:</strong></p>
+            <p>• Complete email marketing system guide</p>
+            <p>• 20 comprehensive chapters</p>
+            <p>• List building strategies</p>
+            <p>• Email automation workflows</p>
+            <p>• Monetization techniques</p>
+            <p>• PDF format - 35+ pages</p>
+        </div>
+        
+        <div class="email-section">
+            <h2>Email Delivery (Optional)</h2>
+            <p style="color: #666; margin-bottom: 15px; font-size: 14px;">Want a copy sent to your email? Enter your address below:</p>
+            <form class="email-form" onsubmit="sendEmail(event)">
+                <input type="email" id="email" placeholder="your@email.com" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+        <div class="disclaimer">
+            <h3>⚠️ Disclaimer: Results May Vary</h3>
+            <p>Individual results depend on effort, experience, and other factors. Success is not guaranteed. This guide provides educational information and strategies, but outcomes vary based on individual implementation.</p>
+            <h3 style="margin-top: 15px;">📋 Refund Policy</h3>
+            <p>All sales are final. No refunds or returns. By purchasing, you acknowledge and agree to these terms.</p>
+        </div>
+        
+        <div class="support">
+            <p>Need help? Contact us at <a href="mailto:dsllc8888@gmail.com">dsllc8888@gmail.com</a></p>
+        </div>
+    </div>
+    
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            alert('Email functionality coming soon! For now, please use the download button above.');
+        }
+    </script>
+</body>
+</html>
